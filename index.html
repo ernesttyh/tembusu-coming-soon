@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tembusu — Singapore Botanic Gardens</title>
+  <meta name="description" content="A house of stories taking root. A straits dining house at Singapore Botanic Gardens. Opening soon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="version-a">
+  <!-- Navigation -->
+  <nav class="landing-nav">
+    <a href="/" class="nav-logo">
+      <img src="assets/logo.png" alt="Tembusu">
+    </a>
+    <div class="nav-right">
+      <span class="nav-status">OPENING SOON</span>
+      <a href="#signup" class="nav-cta">JOIN UPDATES</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-illustrated">
+    <img src="assets/cloud-1.png" alt="" class="deco-cloud" aria-hidden="true">
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-headline">
+          A house of stories<br><em>taking root.</em>
+        </h1>
+        <p class="hero-subtitle">A straits dining house at Singapore Botanic Garden</p>
+        <hr class="hero-line">
+        <p class="hero-cta-text">Opening soon. Join our list for first news on<br>reservations and menu previews.</p>
+        
+        <form id="signup" class="signup-form" onsubmit="handleSignup(event)">
+          <div class="form-row">
+            <input type="text" name="contact" placeholder="Email or WhatsApp number" required class="signup-input">
+            <button type="submit" class="signup-btn">Notify Me</button>
+          </div>
+          <p class="form-note">Opening updates only.</p>
+          <p class="form-success" id="successMsg" style="display:none;">Thank you! We'll be in touch.</p>
+        </form>
+      </div>
+      <div class="hero-illustration">
+        <img src="assets/house-sketch.png" alt="Tembusu at Singapore Botanic Gardens">
+      </div>
+    </div>
+  </section>
+
+  <!-- Fixed floral accents -->
+  <img src="assets/orchid.png" alt="" class="deco-orchid" aria-hidden="true">
+  <img src="assets/bird-paradise.png" alt="" class="deco-bird" aria-hidden="true">
+
+  <!-- Where Heritage and Nature Meet Section -->
+  <section class="heritage-section">
+    <h2 class="heritage-headline">Where heritage and nature meet,</h2>
+    <p class="heritage-text">Tembusu is a celebration of place, culture and the stories that connect us — through time, through taste.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <div class="footer-inner">
+      <img src="assets/logo.png" alt="Tembusu" class="footer-logo">
+      <p class="footer-tagline">Singapore Botanic Gardens</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/tembusu.sg/" target="_blank">Instagram</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Tembusu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
