@@ -531,6 +531,19 @@ input, button { font-family: var(--sans); }
   margin-bottom: 20px;
 }
 
+.footer-follow {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(245,240,232,0.65);
+  margin-bottom: 16px;
+}
+
+.footer-divider {
+  margin: 0 10px;
+  color: rgba(245,240,232,0.3);
+}
+
 .footer-links {
   margin-bottom: 20px;
 }
