@@ -45,17 +45,14 @@ input, button { font-family: var(--sans); }
   padding: 40px 24px;
 }
 .version-b .deco-orchid {
-  width: 200px;
-  bottom: -40px;
-  left: -20px;
-  opacity: 0.75;
+  display: none;
 }
 
 .version-b .deco-bird {
-  width: 180px;
-  bottom: -30px;
-  right: -10px;
-  opacity: 0.75;
+  width: 300px;
+  bottom: 0;
+  right: 0;
+  opacity: 0.85;
 }
 
 .version-b .social-footer {
