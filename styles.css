@@ -53,6 +53,14 @@ input, button { font-family: var(--sans); }
   bottom: 0;
   right: 0;
   opacity: 0.85;
+  z-index: 5;
+}
+
+.version-b .hero-text,
+.version-b .hero-content,
+.version-b .signup-form {
+  position: relative;
+  z-index: 20;
 }
 
 .version-b .social-footer {
@@ -702,6 +710,23 @@ input, button { font-family: var(--sans); }
   }
   .hero-subtitle-video {
     text-shadow: 0 1px 8px rgba(0,0,0,0.3);
+  }
+  /* Version B mobile flower overrides */
+  .version-b .deco-orchid {
+    display: none;
+  }
+  .version-b .deco-bird {
+    width: 120px;
+    right: -20px;
+    bottom: -10px;
+    z-index: 5;
+    opacity: 0.7;
+  }
+  .version-b .hero-text,
+  .version-b .hero-content,
+  .version-b .signup-form {
+    position: relative;
+    z-index: 20;
   }
   /* Swap to mobile-optimized video */
   .mobile-video { display: block; }
