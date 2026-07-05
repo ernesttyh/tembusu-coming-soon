@@ -44,6 +44,20 @@ input, button { font-family: var(--sans); }
   text-align: center;
   padding: 40px 24px;
 }
+.version-b .deco-orchid {
+  width: 200px;
+  bottom: -40px;
+  left: -20px;
+  opacity: 0.75;
+}
+
+.version-b .deco-bird {
+  width: 180px;
+  bottom: -30px;
+  right: -10px;
+  opacity: 0.75;
+}
+
 .version-b .social-footer {
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(8px);
