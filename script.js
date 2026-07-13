@@ -12,29 +12,26 @@ async function handleSignup(e) {
   btn.textContent = 'Sending...';
   btn.disabled = true;
 
+  const source = window.location.pathname === '/illustrated' ? 'illustrated' : 'video';
+
   try {
-    const res = await fetch('/api/subscribe', {
+    await fetch('https://script.google.com/macros/s/AKfycbwiXJzDwPXz20OQw0heVC7EVlk5Z4kHb80ghYEKQbRbuq-cja4xlzmIK4v0YnYtd95DQA/exec', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ contact, timestamp: new Date().toISOString() })
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ contact, source })
     });
 
-    if (res.ok) {
-      input.value = '';
-      btn.textContent = '✓ Added';
-      // Show success message
-      const successEl = form.querySelector('.form-success');
-      if (successEl) successEl.style.display = 'block';
-      // Hide the form note
-      const noteEl = form.querySelector('.form-note');
-      if (noteEl) noteEl.style.display = 'none';
-    } else {
-      btn.textContent = 'Try again';
-    }
+    input.value = '';
+    btn.textContent = '✓ Added';
+    const successEl = form.querySelector('.form-success');
+    if (successEl) successEl.style.display = 'block';
+    const noteEl = form.querySelector('.form-note');
+    if (noteEl) noteEl.style.display = 'none';
   } catch (err) {
     // Fallback: store locally
     const stored = JSON.parse(localStorage.getItem('tembusu_signups') || '[]');
-    stored.push({ contact, timestamp: new Date().toISOString() });
+    stored.push({ contact, source, timestamp: new Date().toISOString() });
     localStorage.setItem('tembusu_signups', JSON.stringify(stored));
     
     input.value = '';
