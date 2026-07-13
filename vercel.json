@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/", "destination": "/video.html" },
     { "source": "/illustrated", "destination": "/index.html" },
     { "source": "/video", "destination": "/video.html" }
   ],
